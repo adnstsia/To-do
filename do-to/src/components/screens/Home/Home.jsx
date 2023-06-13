@@ -3,25 +3,25 @@ import DotoshkiItem from "./DotoshkiItem";
 import CreateTodoField from "./create-todo-field/create-todo-field";
 
 const data = [
-  { _id: "jbhvtrhjb", title: "Я смогла!!", isCompleted: false },
+  { _id: "jbhvtrhjb", title: "Я твой сахарный пакет", isCompleted: false },
   {
     _id: "jbhkDhrhjb",
-    title: "Пусть скажут нам, что мы не люди",
+    title: "Обязательно отправиться туда",
     isCompleted: false,
   },
   {
     _id: "JBhxhdjb",
-    title: "Пусть скажут нам: так невозможно жить",
+    title: "Не забыть принести то",
     isCompleted: false,
   },
   {
     _id: "jbhkDhlemknb",
-    title: "Всё нипочём: как хочешь - так и будет",
+    title: "Почитинь сё",
     isCompleted: false,
   },
   {
     _id: "pcprnrb",
-    title: "Как ты захочешь -так и будем жить.",
+    title: "Посчитать барашков",
     isCompleted: false,
   },
 ];

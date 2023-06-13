@@ -7,13 +7,13 @@ const Check = ({ isCompleted }) => {
     <div
       className={cn(
         `border-2 rounded-lg
-         border-pink-300 w-7 h-7 mr-3 ml-2 flex items-center justify-center`,
+        border-lime-300  w-7 h-7 mr-3 ml-2 flex items-center justify-center`,
         {
-          "bg-pink-400": isCompleted,
+          "bg-lime-300": isCompleted,
         }
       )}
     >
-      {isCompleted && <BsCheck size={24} className="text-gray-900" />}
+      {isCompleted && <BsCheck size={24} className="text-neutral-500" />}
     </div>
   );
 };

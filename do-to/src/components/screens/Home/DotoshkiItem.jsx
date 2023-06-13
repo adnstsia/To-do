@@ -5,11 +5,11 @@ import { BsTrash } from "react-icons/bs";
 
 const DotoshkiItem = ({ todo, changeTodo, removeTodo }) => {
   return (
-    <div
-      className="flex items-center justify-between mb-4 rounded-2xl bg-gray-800 h-10 w-full"
-      onClick={() => changeTodo(todo._id)}
-    >
-      <button className="flex items-center">
+    <div className="flex items-center justify-between mb-4 rounded-2xl bg-zinc-700 h-10 w-full">
+      <button
+        className="flex items-center rounded-2xl bg-zinc-700  h-10 w-full box-border"
+        onClick={() => changeTodo(todo._id)}
+      >
         <Check isCompleted={todo.isCompleted} />
         <span
           className={cn({
