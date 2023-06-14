@@ -3,6 +3,7 @@ import Check from "./item/Check";
 import cn from "classnames";
 import { BsTrash } from "react-icons/bs";
 
+// Таски
 const DotoshkiItem = ({ todo, changeTodo, removeTodo }) => {
   return (
     <div className="flex items-center justify-between mb-4 rounded-2xl bg-zinc-700 h-10 w-full">

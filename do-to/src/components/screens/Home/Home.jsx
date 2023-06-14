@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import DotoshkiItem from "./DotoshkiItem";
 import CreateTodoField from "./create-todo-field/create-todo-field";
+import FilterTodoNotCompleted from "./to-do-filter/filter-not-completed";
+import FilterTodoCompleted from "./to-do-filter/filter-completed";
+import FilterTodoAll from "./to-do-filter/filter-all";
 
+// Основной файл
+
+// Изначальный массив
 const data = [
   { _id: "jbhvtrhjb", title: "Я твой сахарный пакет", isCompleted: false },
   {
@@ -25,7 +31,6 @@ const data = [
     isCompleted: false,
   },
 ];
-
 const Home = () => {
   const [dotoshki, setDotoshki] = useState(data);
 
@@ -51,7 +56,23 @@ const Home = () => {
         />
       ))}
 
+      {/* Поле ввода тасков */}
       <CreateTodoField setDotoshki={setDotoshki} />
+      {/* Контейнер с кнопками-переключателями между состояниями заявок */}
+      <div className="flex justify-center w-full gap-2">
+        {/* Переключатель "Uncompleted" */}
+        <button className="hover:text-lime-200 transition-colors ease-in-out duration-300">
+          <FilterTodoNotCompleted setDotoshki={setDotoshki} data={data} />
+        </button>
+        {/* Переключатель "All" */}
+        <button className="hover:text-lime-200 transition-colors ease-in-out duration-300">
+          <FilterTodoAll setDotoshki={setDotoshki} data={data} />
+        </button>
+        {/* Переключатель "Completed" */}
+        <button className="hover:text-lime-200 transition-colors ease-in-out duration-300">
+          <FilterTodoCompleted setDotoshki={setDotoshki} data={data} />
+        </button>
+      </div>
     </div>
   );
 };

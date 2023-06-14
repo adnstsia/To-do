@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+// Поле создания новой таски
 const CreateTodoField = ({ setDotoshki }) => {
   const [title, setTitle] = useState("");
 
